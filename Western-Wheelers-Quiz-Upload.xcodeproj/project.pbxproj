@@ -1,0 +1,619 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7BCFDFAE24D3AEFE00556497 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCFDFAD24D3AEFE00556497 /* AppDelegate.swift */; };
+		7BCFDFB024D3AEFE00556497 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCFDFAF24D3AEFE00556497 /* ContentView.swift */; };
+		7BCFDFB324D3AEFE00556497 /* Western_Wheelers_Quiz_Upload.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7BCFDFB124D3AEFE00556497 /* Western_Wheelers_Quiz_Upload.xcdatamodeld */; };
+		7BCFDFB524D3AF0100556497 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BCFDFB424D3AF0100556497 /* Assets.xcassets */; };
+		7BCFDFB824D3AF0100556497 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BCFDFB724D3AF0100556497 /* Preview Assets.xcassets */; };
+		7BCFDFBB24D3AF0100556497 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BCFDFB924D3AF0100556497 /* Main.storyboard */; };
+		7BCFDFC724D3AF0100556497 /* Western_Wheelers_Quiz_UploadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCFDFC624D3AF0100556497 /* Western_Wheelers_Quiz_UploadTests.swift */; };
+		7BCFDFD224D3AF0100556497 /* Western_Wheelers_Quiz_UploadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCFDFD124D3AF0100556497 /* Western_Wheelers_Quiz_UploadUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7BCFDFC324D3AF0100556497 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7BCFDFA224D3AEFE00556497 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BCFDFA924D3AEFE00556497;
+			remoteInfo = "Western-Wheelers-Quiz-Upload";
+		};
+		7BCFDFCE24D3AF0100556497 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7BCFDFA224D3AEFE00556497 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BCFDFA924D3AEFE00556497;
+			remoteInfo = "Western-Wheelers-Quiz-Upload";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7BCFDFAA24D3AEFE00556497 /* Western-Wheelers-Quiz-Upload.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Western-Wheelers-Quiz-Upload.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BCFDFAD24D3AEFE00556497 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7BCFDFAF24D3AEFE00556497 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7BCFDFB224D3AEFE00556497 /* Western_Wheelers_Quiz_Upload.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Western_Wheelers_Quiz_Upload.xcdatamodel; sourceTree = "<group>"; };
+		7BCFDFB424D3AF0100556497 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7BCFDFB724D3AF0100556497 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7BCFDFBA24D3AF0100556497 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7BCFDFBC24D3AF0100556497 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BCFDFBD24D3AF0100556497 /* Western_Wheelers_Quiz_Upload.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Western_Wheelers_Quiz_Upload.entitlements; sourceTree = "<group>"; };
+		7BCFDFC224D3AF0100556497 /* Western-Wheelers-Quiz-UploadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Western-Wheelers-Quiz-UploadTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BCFDFC624D3AF0100556497 /* Western_Wheelers_Quiz_UploadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Western_Wheelers_Quiz_UploadTests.swift; sourceTree = "<group>"; };
+		7BCFDFC824D3AF0100556497 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BCFDFCD24D3AF0100556497 /* Western-Wheelers-Quiz-UploadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Western-Wheelers-Quiz-UploadUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BCFDFD124D3AF0100556497 /* Western_Wheelers_Quiz_UploadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Western_Wheelers_Quiz_UploadUITests.swift; sourceTree = "<group>"; };
+		7BCFDFD324D3AF0100556497 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7BCFDFA724D3AEFE00556497 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BCFDFBF24D3AF0100556497 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BCFDFCA24D3AF0100556497 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7BCFDFA124D3AEFE00556497 = {
+			isa = PBXGroup;
+			children = (
+				7BCFDFAC24D3AEFE00556497 /* Western-Wheelers-Quiz-Upload */,
+				7BCFDFC524D3AF0100556497 /* Western-Wheelers-Quiz-UploadTests */,
+				7BCFDFD024D3AF0100556497 /* Western-Wheelers-Quiz-UploadUITests */,
+				7BCFDFAB24D3AEFE00556497 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7BCFDFAB24D3AEFE00556497 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7BCFDFAA24D3AEFE00556497 /* Western-Wheelers-Quiz-Upload.app */,
+				7BCFDFC224D3AF0100556497 /* Western-Wheelers-Quiz-UploadTests.xctest */,
+				7BCFDFCD24D3AF0100556497 /* Western-Wheelers-Quiz-UploadUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7BCFDFAC24D3AEFE00556497 /* Western-Wheelers-Quiz-Upload */ = {
+			isa = PBXGroup;
+			children = (
+				7BCFDFAD24D3AEFE00556497 /* AppDelegate.swift */,
+				7BCFDFAF24D3AEFE00556497 /* ContentView.swift */,
+				7BCFDFB424D3AF0100556497 /* Assets.xcassets */,
+				7BCFDFB924D3AF0100556497 /* Main.storyboard */,
+				7BCFDFBC24D3AF0100556497 /* Info.plist */,
+				7BCFDFBD24D3AF0100556497 /* Western_Wheelers_Quiz_Upload.entitlements */,
+				7BCFDFB124D3AEFE00556497 /* Western_Wheelers_Quiz_Upload.xcdatamodeld */,
+				7BCFDFB624D3AF0100556497 /* Preview Content */,
+			);
+			path = "Western-Wheelers-Quiz-Upload";
+			sourceTree = "<group>";
+		};
+		7BCFDFB624D3AF0100556497 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7BCFDFB724D3AF0100556497 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7BCFDFC524D3AF0100556497 /* Western-Wheelers-Quiz-UploadTests */ = {
+			isa = PBXGroup;
+			children = (
+				7BCFDFC624D3AF0100556497 /* Western_Wheelers_Quiz_UploadTests.swift */,
+				7BCFDFC824D3AF0100556497 /* Info.plist */,
+			);
+			path = "Western-Wheelers-Quiz-UploadTests";
+			sourceTree = "<group>";
+		};
+		7BCFDFD024D3AF0100556497 /* Western-Wheelers-Quiz-UploadUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7BCFDFD124D3AF0100556497 /* Western_Wheelers_Quiz_UploadUITests.swift */,
+				7BCFDFD324D3AF0100556497 /* Info.plist */,
+			);
+			path = "Western-Wheelers-Quiz-UploadUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7BCFDFA924D3AEFE00556497 /* Western-Wheelers-Quiz-Upload */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BCFDFD624D3AF0100556497 /* Build configuration list for PBXNativeTarget "Western-Wheelers-Quiz-Upload" */;
+			buildPhases = (
+				7BCFDFA624D3AEFE00556497 /* Sources */,
+				7BCFDFA724D3AEFE00556497 /* Frameworks */,
+				7BCFDFA824D3AEFE00556497 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Western-Wheelers-Quiz-Upload";
+			productName = "Western-Wheelers-Quiz-Upload";
+			productReference = 7BCFDFAA24D3AEFE00556497 /* Western-Wheelers-Quiz-Upload.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7BCFDFC124D3AF0100556497 /* Western-Wheelers-Quiz-UploadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BCFDFD924D3AF0100556497 /* Build configuration list for PBXNativeTarget "Western-Wheelers-Quiz-UploadTests" */;
+			buildPhases = (
+				7BCFDFBE24D3AF0100556497 /* Sources */,
+				7BCFDFBF24D3AF0100556497 /* Frameworks */,
+				7BCFDFC024D3AF0100556497 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7BCFDFC424D3AF0100556497 /* PBXTargetDependency */,
+			);
+			name = "Western-Wheelers-Quiz-UploadTests";
+			productName = "Western-Wheelers-Quiz-UploadTests";
+			productReference = 7BCFDFC224D3AF0100556497 /* Western-Wheelers-Quiz-UploadTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7BCFDFCC24D3AF0100556497 /* Western-Wheelers-Quiz-UploadUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BCFDFDC24D3AF0100556497 /* Build configuration list for PBXNativeTarget "Western-Wheelers-Quiz-UploadUITests" */;
+			buildPhases = (
+				7BCFDFC924D3AF0100556497 /* Sources */,
+				7BCFDFCA24D3AF0100556497 /* Frameworks */,
+				7BCFDFCB24D3AF0100556497 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7BCFDFCF24D3AF0100556497 /* PBXTargetDependency */,
+			);
+			name = "Western-Wheelers-Quiz-UploadUITests";
+			productName = "Western-Wheelers-Quiz-UploadUITests";
+			productReference = 7BCFDFCD24D3AF0100556497 /* Western-Wheelers-Quiz-UploadUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7BCFDFA224D3AEFE00556497 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "David Murphy";
+				TargetAttributes = {
+					7BCFDFA924D3AEFE00556497 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					7BCFDFC124D3AF0100556497 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 7BCFDFA924D3AEFE00556497;
+					};
+					7BCFDFCC24D3AF0100556497 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 7BCFDFA924D3AEFE00556497;
+					};
+				};
+			};
+			buildConfigurationList = 7BCFDFA524D3AEFE00556497 /* Build configuration list for PBXProject "Western-Wheelers-Quiz-Upload" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7BCFDFA124D3AEFE00556497;
+			productRefGroup = 7BCFDFAB24D3AEFE00556497 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7BCFDFA924D3AEFE00556497 /* Western-Wheelers-Quiz-Upload */,
+				7BCFDFC124D3AF0100556497 /* Western-Wheelers-Quiz-UploadTests */,
+				7BCFDFCC24D3AF0100556497 /* Western-Wheelers-Quiz-UploadUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7BCFDFA824D3AEFE00556497 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BCFDFBB24D3AF0100556497 /* Main.storyboard in Resources */,
+				7BCFDFB824D3AF0100556497 /* Preview Assets.xcassets in Resources */,
+				7BCFDFB524D3AF0100556497 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BCFDFC024D3AF0100556497 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BCFDFCB24D3AF0100556497 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7BCFDFA624D3AEFE00556497 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BCFDFB024D3AEFE00556497 /* ContentView.swift in Sources */,
+				7BCFDFB324D3AEFE00556497 /* Western_Wheelers_Quiz_Upload.xcdatamodeld in Sources */,
+				7BCFDFAE24D3AEFE00556497 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BCFDFBE24D3AF0100556497 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BCFDFC724D3AF0100556497 /* Western_Wheelers_Quiz_UploadTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BCFDFC924D3AF0100556497 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BCFDFD224D3AF0100556497 /* Western_Wheelers_Quiz_UploadUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7BCFDFC424D3AF0100556497 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7BCFDFA924D3AEFE00556497 /* Western-Wheelers-Quiz-Upload */;
+			targetProxy = 7BCFDFC324D3AF0100556497 /* PBXContainerItemProxy */;
+		};
+		7BCFDFCF24D3AF0100556497 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7BCFDFA924D3AEFE00556497 /* Western-Wheelers-Quiz-Upload */;
+			targetProxy = 7BCFDFCE24D3AF0100556497 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7BCFDFB924D3AF0100556497 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BCFDFBA24D3AF0100556497 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7BCFDFD424D3AF0100556497 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7BCFDFD524D3AF0100556497 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		7BCFDFD724D3AF0100556497 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Western-Wheelers-Quiz-Upload/Western_Wheelers_Quiz_Upload.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Western-Wheelers-Quiz-Upload/Preview Content\"";
+				DEVELOPMENT_TEAM = 2B6A6N9QBQ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Western-Wheelers-Quiz-Upload/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.david-murphy.Western-Wheelers-Quiz-Upload";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		7BCFDFD824D3AF0100556497 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Western-Wheelers-Quiz-Upload/Western_Wheelers_Quiz_Upload.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Western-Wheelers-Quiz-Upload/Preview Content\"";
+				DEVELOPMENT_TEAM = 2B6A6N9QBQ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Western-Wheelers-Quiz-Upload/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.david-murphy.Western-Wheelers-Quiz-Upload";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		7BCFDFDA24D3AF0100556497 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2B6A6N9QBQ;
+				INFOPLIST_FILE = "Western-Wheelers-Quiz-UploadTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.david-murphy.Western-Wheelers-Quiz-UploadTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Western-Wheelers-Quiz-Upload.app/Contents/MacOS/Western-Wheelers-Quiz-Upload";
+			};
+			name = Debug;
+		};
+		7BCFDFDB24D3AF0100556497 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2B6A6N9QBQ;
+				INFOPLIST_FILE = "Western-Wheelers-Quiz-UploadTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.david-murphy.Western-Wheelers-Quiz-UploadTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Western-Wheelers-Quiz-Upload.app/Contents/MacOS/Western-Wheelers-Quiz-Upload";
+			};
+			name = Release;
+		};
+		7BCFDFDD24D3AF0100556497 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2B6A6N9QBQ;
+				INFOPLIST_FILE = "Western-Wheelers-Quiz-UploadUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.david-murphy.Western-Wheelers-Quiz-UploadUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Western-Wheelers-Quiz-Upload";
+			};
+			name = Debug;
+		};
+		7BCFDFDE24D3AF0100556497 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2B6A6N9QBQ;
+				INFOPLIST_FILE = "Western-Wheelers-Quiz-UploadUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.david-murphy.Western-Wheelers-Quiz-UploadUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Western-Wheelers-Quiz-Upload";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7BCFDFA524D3AEFE00556497 /* Build configuration list for PBXProject "Western-Wheelers-Quiz-Upload" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BCFDFD424D3AF0100556497 /* Debug */,
+				7BCFDFD524D3AF0100556497 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BCFDFD624D3AF0100556497 /* Build configuration list for PBXNativeTarget "Western-Wheelers-Quiz-Upload" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BCFDFD724D3AF0100556497 /* Debug */,
+				7BCFDFD824D3AF0100556497 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BCFDFD924D3AF0100556497 /* Build configuration list for PBXNativeTarget "Western-Wheelers-Quiz-UploadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BCFDFDA24D3AF0100556497 /* Debug */,
+				7BCFDFDB24D3AF0100556497 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BCFDFDC24D3AF0100556497 /* Build configuration list for PBXNativeTarget "Western-Wheelers-Quiz-UploadUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BCFDFDD24D3AF0100556497 /* Debug */,
+				7BCFDFDE24D3AF0100556497 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7BCFDFB124D3AEFE00556497 /* Western_Wheelers_Quiz_Upload.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7BCFDFB224D3AEFE00556497 /* Western_Wheelers_Quiz_Upload.xcdatamodel */,
+			);
+			currentVersion = 7BCFDFB224D3AEFE00556497 /* Western_Wheelers_Quiz_Upload.xcdatamodel */;
+			path = Western_Wheelers_Quiz_Upload.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7BCFDFA224D3AEFE00556497 /* Project object */;
+}
