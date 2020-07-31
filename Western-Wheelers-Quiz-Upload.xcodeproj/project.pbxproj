@@ -15,6 +15,7 @@
 		7BCFDFBB24D3AF0100556497 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BCFDFB924D3AF0100556497 /* Main.storyboard */; };
 		7BCFDFC724D3AF0100556497 /* Western_Wheelers_Quiz_UploadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCFDFC624D3AF0100556497 /* Western_Wheelers_Quiz_UploadTests.swift */; };
 		7BCFDFD224D3AF0100556497 /* Western_Wheelers_Quiz_UploadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCFDFD124D3AF0100556497 /* Western_Wheelers_Quiz_UploadUITests.swift */; };
+		7BCFDFE124D3AF5500556497 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BCFDFE024D3AF5500556497 /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		7BCFDFCD24D3AF0100556497 /* Western-Wheelers-Quiz-UploadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Western-Wheelers-Quiz-UploadUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BCFDFD124D3AF0100556497 /* Western_Wheelers_Quiz_UploadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Western_Wheelers_Quiz_UploadUITests.swift; sourceTree = "<group>"; };
 		7BCFDFD324D3AF0100556497 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BCFDFE024D3AF5500556497 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BCFDFE124D3AF5500556497 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +87,7 @@
 				7BCFDFC524D3AF0100556497 /* Western-Wheelers-Quiz-UploadTests */,
 				7BCFDFD024D3AF0100556497 /* Western-Wheelers-Quiz-UploadUITests */,
 				7BCFDFAB24D3AEFE00556497 /* Products */,
+				7BCFDFDF24D3AF5500556497 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,6 +140,14 @@
 				7BCFDFD324D3AF0100556497 /* Info.plist */,
 			);
 			path = "Western-Wheelers-Quiz-UploadUITests";
+			sourceTree = "<group>";
+		};
+		7BCFDFDF24D3AF5500556497 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7BCFDFE024D3AF5500556497 /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -448,7 +460,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.david-murphy.Western-Wheelers-Quiz-Upload";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.david-murphy.test2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -471,7 +483,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.david-murphy.Western-Wheelers-Quiz-Upload";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.david-murphy.test2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
