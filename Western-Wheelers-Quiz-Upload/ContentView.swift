@@ -7,48 +7,74 @@ import Cocoa
 
 class Model {
     
-    func upload_image()  {
+    func upload_record(path: String, fields : [String])  {
         let record = CKRecord(recordType: "Quiz_Images")
-        let path = "/Users/davidm/Library/Containers/com.david-murphy.test2/Data/Documents/data/km.png"
-        let asset = CKAsset(fileURL: URL(fileURLWithPath: path))
-        record["image1"] = asset
+//        var index = filepath.index(filepath.endIndex, offsetBy: -10)
+//        let file_name = String(filepath[index..<filepath.endIndex])
+//        index = file_name.index(file_name.endIndex, offsetBy: -4)
+//        let image_num = String(file_name[..<index])
         
+        let image_num = fields[0]
+        let filepath = path + "/" + image_num + ".png"
+        let image_asset = CKAsset(fileURL: URL(fileURLWithPath: filepath))
+        
+        //record["image_num"] = Int(image_num)
+        print("=========================>IMAGE NUM:", image_num)
+        record["image"] = image_asset
+        record["image_desc"] = fields[2]
+        record["latitude"] = Float(fields[3])
+        record["longitude"] = Float(fields[4])
+        record["url"] = fields[5]
+        record["enabled"] = 1
+
         let container = CKContainer(identifier: "iCloud.com.dmurphy.westernwheelers")
         container.publicCloudDatabase.save(record, completionHandler: {
             record, error in
             if error != nil {
-                print("\(String(describing: error))")
+                print("\nERROR UPLOADING IMAGE ===================\(String(describing: error))")
             } else {
-                print("============ saved")
+                print("saved:"+filepath)
             }
         })
     }
     
-//    func write2()  {
-//        let container = CKContainer(identifier: "iCloud.com.dmurphy.westernwheelers")
-//        let rec = CKRecord(recordType: "Quiz_Images")
-//        rec["genre"] = "test" as CKRecordValue
+    func upload_index()  {
+        let path = "/Users/davidm/Library/Containers/com.david-murphy.Western-Wheelers-Quiz-Upload/Data/Documents/data"
+        do {
+            let data = try String(contentsOfFile: path+"/index.txt", encoding: .utf8)
+            let line_data = data.components(separatedBy: .newlines)
+            var line_num = 0
+            for line in line_data {
+                let fields = line.components(separatedBy: ", ")
+                print("=========================>LINE NUM:", line_num, line, fields)
+                if fields.count == 6 {
+                    upload_record(path: path, fields: fields)
+                }
+                line_num += 1
+            }
+        }
+            catch {print("\nERROR ===================\(String(describing: error))")
+        }
+    }
 //
-//        //let asset = CKAsset(fileURL: url)
-//        //rec["image"] = ns_image as! CKRecordValue
-//        //return ns_image!
-//
-//        //CKContainer.default().publicCloudDatabase.save(rec) { [unowned self] record, error in
-//        container.publicCloudDatabase.save(rec) { record, error in
-//            DispatchQueue.main.async {
-//                if let error = error {
-//                    self.status_text = "Error: \(error.localizedDescription)"
-//                    //self.spinner.stopAnimating()
-//                    print("=====================>", self.status_text)
-//                } else {
-//                    //self.view.backgroundColor = UIColor(red: 0, green: 0.6, blue: 0, alpha: 1)
-//                    self.status_text = "Done!"
-//                    //self.spinner.stopAnimating()
-//                    //ViewController.isDirty = true
+//    func upload_filesx() {
+//        let fm = FileManager.default
+//        // NOTE: files must be in this dir for read permission
+//        do {
+//            let items = try fm.contentsOfDirectory(atPath: path)
+//            for item in items {
+//                if item.contains(".png") {
+//                    upload_image(filepath: path+"/"+item)
+//                }
+//                if item.contains("index.txt") {
+//                    upload_index(filepath: path+"/"+item)
 //                }
 //            }
+//        } catch {
+//            print("\nERROR DIRECTORY:\(String(describing: error))")
 //        }
 //    }
+    
 }
 
 struct ContentView: View {
@@ -86,10 +112,11 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            self.getImage()
+            //self.getImage()
+            Text("hit upload ...")
             Button(action: {
-                print("\n========================Delete button tapped!")
-                Model().upload_image()
+                print("Upload tapped!")
+                Model().upload_index()
             }) {
                 Text("Upload Images")
             }
