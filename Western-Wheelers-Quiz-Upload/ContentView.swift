@@ -6,6 +6,49 @@ import CoreImage
 import Cocoa
 
 class Model {
+    var rec_ids : [CKRecord.ID] = []
+    let db = CKContainer(identifier: "iCloud.com.dmurphy.westernwheelers").publicCloudDatabase
+    
+    func delete_records() {
+        let predicate = NSPredicate(value: true)
+        let query = CKQuery(recordType: "Quiz_Images", predicate: predicate)
+        let fetch_operation = CKQueryOperation(query: query)
+        
+        fetch_operation.recordFetchedBlock = { record in
+            let image_id = record.recordID
+            self.rec_ids.append(image_id)
+            print("FETCH:", image_id)
+//            if image_loaded != nil {
+//                print("=============== image updated, count:", image_desc)
+//                self.image_records.append(ImageRecord(im: UIImage(data: data!)!, desc: image_desc))
+//            }
+        }
+        
+        fetch_operation.queryCompletionBlock = { [unowned self] (cursor, error) in
+            if error == nil {
+                DispatchQueue.main.async {
+                    //print("=============== quiz images updated, count:", self.image_records.count)
+                    //print("=============== quiz image updated 2 nil::", self.image_loaded == nil, self.image_loaded.debugDescription, self.image_loaded?.size)
+                }
+                //self.container.publicCloudDatabase.add(del_operation)
+                var del_operation : CKModifyRecordsOperation?
+                del_operation = CKModifyRecordsOperation(recordsToSave: nil, recordIDsToDelete: self.rec_ids)
+                del_operation!.savePolicy = .allKeys
+                del_operation!.modifyRecordsCompletionBlock = { added, deleted, error in
+                    if error != nil {
+                        print(error)
+                    } else {
+                        print("All deleted, count:") //, self.rec_ids.count)
+                    }
+                }
+                self.db.add(del_operation!)
+            } else {
+                print("Load ================ERR:", error?.localizedDescription ?? "")
+            }
+        }
+        //container.publicCloudDatabase
+        self.db.add(fetch_operation)
+    }
     
     func upload_record(path: String, fields : [String])  {
         let record = CKRecord(recordType: "Quiz_Images")
@@ -27,8 +70,8 @@ class Model {
         record["url"] = fields[5]
         record["enabled"] = 1
 
-        let container = CKContainer(identifier: "iCloud.com.dmurphy.westernwheelers")
-        container.publicCloudDatabase.save(record, completionHandler: {
+        //self.container.publicCloudDatabase
+        db.save(record, completionHandler: {
             record, error in
             if error != nil {
                 print("\nERROR UPLOADING IMAGE ===================\(String(describing: error))")
@@ -44,6 +87,7 @@ class Model {
             let data = try String(contentsOfFile: path+"/index.txt", encoding: .utf8)
             let line_data = data.components(separatedBy: .newlines)
             var line_num = 0
+            let max_lines = 2000000000000
             for line in line_data {
                 let fields = line.components(separatedBy: ", ")
                 print("=========================>LINE NUM:", line_num, line, fields)
@@ -51,30 +95,14 @@ class Model {
                     upload_record(path: path, fields: fields)
                 }
                 line_num += 1
+                if line_num >= max_lines {
+                    break
+                }
             }
         }
             catch {print("\nERROR ===================\(String(describing: error))")
         }
     }
-//
-//    func upload_filesx() {
-//        let fm = FileManager.default
-//        // NOTE: files must be in this dir for read permission
-//        do {
-//            let items = try fm.contentsOfDirectory(atPath: path)
-//            for item in items {
-//                if item.contains(".png") {
-//                    upload_image(filepath: path+"/"+item)
-//                }
-//                if item.contains("index.txt") {
-//                    upload_index(filepath: path+"/"+item)
-//                }
-//            }
-//        } catch {
-//            print("\nERROR DIRECTORY:\(String(describing: error))")
-//        }
-//    }
-    
 }
 
 struct ContentView: View {
@@ -114,6 +142,12 @@ struct ContentView: View {
         VStack {
             //self.getImage()
             Text("hit upload ...")
+            Button(action: {
+                print("Delete tapped!")
+                Model().delete_records()
+            }) {
+                Text("Delete Images")
+            }
             Button(action: {
                 print("Upload tapped!")
                 Model().upload_index()
