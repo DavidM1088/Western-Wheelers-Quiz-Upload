@@ -64,7 +64,7 @@ class Model {
         //record["image_num"] = Int(image_num)
         print("=========================>IMAGE NUM:", image_num)
         record["image"] = image_asset
-        record["image_num"] = fields[1]
+        record["image_num"] = fields[0]
         record["image_desc"] = fields[2]
         record["latitude"] = Float(fields[3])
         record["longitude"] = Float(fields[4])
